@@ -1,0 +1,11 @@
+
+    <div class="contents">
+      <h2>つぶやくにゃ</h2>
+        <%= form_tag("/tweets",method: :post, class: "clearfix" ) do %>
+          <%= image_tag 'cat1.png' %>
+          <textarea cols="40" name="text" placeholder="ここに書くにゃ〜" rows="10"></textarea>
+          <div class="button-box">
+            <input type="submit" class="text" value="送信"></input>
+          </div>
+        <% end %>  
+    </div>

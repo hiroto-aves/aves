@@ -1,0 +1,26 @@
+
+    <div class="contents">
+      <% @tweets.each do |tweet| %>
+<!--        <form class="clearfix">
+        <%= image_tag 'cat1.png' %>
+        <textarea rows="4" cols="40"></textarea>
+        <div class="button-box">
+          <input type="submit">
+        </div>
+      </form> -->
+      <div class="message clearfix">
+        <%= image_tag 'cat1.png' %>
+        <div class="message_box">
+          <p class="user_name">
+            野良猫1号
+            <!-- <span class="time">・8月13日</span> -->
+          <p>
+          <p class="text">
+            <%= tweet.text %>
+          </p>
+        </div>
+      </div>
+      <% end %>
+   
+    
+      </div>
